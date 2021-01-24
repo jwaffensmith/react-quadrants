@@ -32,4 +32,4 @@ Today we're going to work with some starter code that pulls from an API and refa
 
 
 
-<i><h6>Authors: React Quadrants inspired on React Quadrants (Hooks) written by @nomastickles</i></h6>
+<i><h6>Authors: React Quadrants inspired by React Quadrants (Hooks) written by @nomastickles</i></h6>
