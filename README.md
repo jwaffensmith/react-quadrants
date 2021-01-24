@@ -31,5 +31,5 @@ Today we're going to work with some starter code that pulls from an API and refa
 
 
 
-
+<p><p><p>
 <i><h6>Author note: React Quadrants inspired by React Quadrants (Hooks) written by @nomastickles</i></h6>
