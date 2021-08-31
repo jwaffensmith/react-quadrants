@@ -6,7 +6,7 @@ const fetchUrl = "https://api.thecatapi.com/v1/images/search";
 
 class CatApi extends Component {
 	state = {
-		images: [],
+		catData: [],
 	  };
 
 	componentDidMount() {
@@ -19,15 +19,18 @@ class CatApi extends Component {
 		.then(response => response.json())
 		.then(json => {
 			this.setState({ 
-			images: json,
+			catData: json,
 		 	});
 		});
+		console.log(this.state.catData, "I'm the cat data!");
 	};
 
 	render() {
+		const { catData } = this.state;
+		console.log(catData);
 		return (
 			
-			<CatSection data={this.state.images} />
+			<CatSection data={catData} />
 		);
 	}
 }
