@@ -9,7 +9,7 @@ const contentStyles = {
 	textAlign: "center",
 };
 
-class Loader extends Component {
+class kawaiiSection extends Component {
 	render () {
 	return (
 			// { this.state.data ? (
@@ -31,4 +31,4 @@ class Loader extends Component {
 	}
 };
 
-export default Loader;
+export default kawaiiSection;
