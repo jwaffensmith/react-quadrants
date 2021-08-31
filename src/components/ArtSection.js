@@ -9,7 +9,7 @@ const contentStyles = {
 	textAlign: "center",
 };
 
-class Section extends Component {
+class ArtSection extends Component {
 	state = {
 		data: "",
 	};
@@ -45,4 +45,4 @@ class Section extends Component {
 	}
 }
 
-export default Section;
+export default ArtSection;
