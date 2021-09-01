@@ -19,7 +19,7 @@ class ButtonSection extends Component {
 		<>
      	<section className="section">
 				<div style={contentStyles}>
-                	<button onClick={() => this.props.fetchData()}>New Content</button>
+                	<button onClick={() => this.props.fetchData()} className="button">New Content</button>
 				</div>
 		</section>
 		</>
