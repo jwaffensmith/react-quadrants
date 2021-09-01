@@ -22,7 +22,6 @@ class CatApi extends Component {
 			catData: json,
 		 	});
 		});
-		console.log(this.state.catData, "I'm the cat data!");
 	};
 
 	render() {

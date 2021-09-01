@@ -1,18 +1,9 @@
-import ArtApi from "./components/ArtApi";
-import ButtonSection from "./components/ButtonSection";
-import CatApi from "./components/CatApi";
-import KawaiiSection from "./components/KawaiiSection";
-
-
-
+import ApiCalls from "./components/ApiCalls";
 
 function App() {
     return (
     <div className="main">
-        <ArtApi/>
-        <CatApi/>
-        <KawaiiSection/>
-        <ButtonSection/>
+        <ApiCalls/>
     </div>
     );
 }

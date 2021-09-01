@@ -9,26 +9,30 @@ const contentStyles = {
 	textAlign: "center",
 };
 
-class kawaiiSection extends Component {
+class KawaiiSection extends Component {
+
 	render () {
+		console.log(this.props.data, this.props.apiData)
 	return (
-			// { this.state.data ? (
 			<>
+			{ this.props.data.length > 0 && this.props.apiData.length > 0 ? (
 			<section className="section">
 				<div style={contentStyles}>
 					<Cat size={320} mood="blissful" color="#596881" />
 				</div>
+			</section> 
+			) : ( 
+			<>
+			<section className="section">
+				<div style={contentStyles}>
+				<Cat size={320} mood="sad" color="#596881" />
+				</div>
 			</section>
 			</>
-			// ) : (
-			// <section className="section">
-			// 	<div style={contentStyles}>
-			// 	<Cat size={320} mood="sad" color="#596881" />
-			// 	</div>
-			// </section>
-			// )}
+			)};
+			</>
 		);
 	}
 };
 
-export default kawaiiSection;
+export default KawaiiSection;

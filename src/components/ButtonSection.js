@@ -10,13 +10,18 @@ const contentStyles = {
 };
 
 class ButtonSection extends Component {
-
+	state = {
+		data: "",
+	};
+	 
+	// on click 
+	// mapping 
 	render() {
 		return (
 		<>
         <section className="section">
 			<div style={contentStyles}>
-                <button>Click For More</button>
+                <button>New Content</button>
 			</div>
 		</section>
 		</>
@@ -25,3 +30,4 @@ class ButtonSection extends Component {
 };
 
 export default ButtonSection;
+

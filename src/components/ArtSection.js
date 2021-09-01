@@ -38,7 +38,7 @@ class ArtSection extends Component {
 
 	render() {
 		return (
-			<section className="section" onClick={this.handleOnClick}>
+			<section className="section">
 				{this.generateContent()}
 			</section>
 		);
