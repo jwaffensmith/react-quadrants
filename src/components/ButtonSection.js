@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 const contentStyles = {
 	position: "relative",
 	top: "50%",
@@ -10,19 +9,18 @@ const contentStyles = {
 };
 
 class ButtonSection extends Component {
-	state = {
-		data: "",
+
+	componentWillUnmount() {
+		this.props.fetchData();
 	};
-	 
-	// on click 
-	// mapping 
+
 	render() {
 		return (
 		<>
-        <section className="section">
-			<div style={contentStyles}>
-                <button>New Content</button>
-			</div>
+     	<section className="section">
+				<div style={contentStyles}>
+                	<button onClick={() => this.props.fetchData()}>New Content</button>
+				</div>
 		</section>
 		</>
 		)

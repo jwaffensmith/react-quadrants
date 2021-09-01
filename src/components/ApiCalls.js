@@ -17,10 +17,18 @@ class ApiCalls extends Component {
 	};
 
 	componentDidMount() {
-		fetch(fetchArtUrl)
-			.then((res) => res.json())
-			.then((json) => this.setState({ apiData: json.data }));
+		this.fetchData();
+	};
+
 		
+	fetchData = () => {
+
+		fetch(fetchArtUrl)
+		.then((res) => res.json())
+		.then((json) => this.setState({ 
+			apiData: json.data
+		}));
+			
 		fetch(fetchCatUrl, {
 			method: "GET",
 			headers: {
@@ -33,19 +41,20 @@ class ApiCalls extends Component {
 			catData: json,
 			});
 		});
-	}
+	};
+
 
 	render() {
 		const { catData, apiData } = this.state;	
 		return (
 			<>
-				<ArtSection apiData={apiData} />
-				<CatSection data={catData} />
-				<KawaiiSection apiData={apiData}  data={catData}/>
-				<ButtonSection data={catData} apiData={apiData} />
+			<ArtSection apiData={apiData} />
+			<CatSection data={catData} />
+			<KawaiiSection apiData={apiData}  data={catData}/>
+			<ButtonSection fetchData={this.fetchData}/>
 			</>
+			
 		);
 	}
 }
-
 export default ApiCalls;

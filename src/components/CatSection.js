@@ -15,7 +15,7 @@ class CatSection extends Component {
 		return (
 			<>
 			{this.props.data[0] ? 
-			<section className="section" onClick={this.handleOnClick} >
+			<section className="section">
 				<div style={contentStyles}>
 					<img 
 					width="200"

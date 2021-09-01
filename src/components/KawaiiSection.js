@@ -10,9 +10,8 @@ const contentStyles = {
 };
 
 class KawaiiSection extends Component {
-
+	
 	render () {
-		console.log(this.props.data, this.props.apiData)
 	return (
 			<>
 			{ this.props.data.length > 0 && this.props.apiData.length > 0 ? (
